@@ -10,11 +10,10 @@ Modifique el código de la práctica anterior de manera que:
 * Se distribuyan las clases en ficheros separados de una manera racional
 * Recuerde que un requisito de la práctica anterior era que el constructor de Medida pudiera llamarse con un sólo argumento:
 
-~~
 
+```
 console.log(new Medida("32F")); // Prueba polimorfismo del constructor de Medida
-
-~~
+```
 
 La expresión regular necesaria para usar es un prefijo de la expresión regular usada en la conversión. Se plantea así el requisito de reciclar la expresión regular factorizando el código de las mismas.
 
