@@ -21,36 +21,54 @@ class Longitud extends Medida {
     }
 }
 
-class Fahrenheit extends Temperatura {
-    constructor(valor, tipo) {
-        super(valor, tipo)
-    }
-
-    toCelsius() {
-        let resultado = (this.valor_ - 32) / 1.8;
-        return resultado;
-    }
-
-    toKelvin() {
-        let resultado = this.toCelsius() + 273;
-        return resultado;
-    }
-}
-
 class Celsius extends Temperatura {
     constructor(valor, tipo) {
-        super(valor, tipo)
+        super(valor, tipo);
+    }
+	
+	toCelsius() {
+		return this;
+	}
+
+    toFahrenheit() {
+        let resultado = (this.valor_ * 1.8) + 32;
+        return new Fahrenheit(resultado, 'f');
     }
 
     toKelvin() {
         let resultado = this.valor_ + 273;
-        return resultado;
+        return new Kelvin(resultado, 'k');
+    }
+	
+	toString() {
+		let string = this.valor_.toFixed(1) + " Celsius";
+		return string;
+	}
+}
+
+class Fahrenheit extends Temperatura {
+    constructor(valor, tipo) {
+        super(valor, tipo);
     }
 
-    toFahrenheit() {
-        let resultado = (this.valor_ * 1.8) + 32;
-        return resultado;
+    toCelsius() {
+        let resultado = (this.valor_ - 32) / 1.8;
+        return new Celsius(resultado, 'c');
     }
+	
+	toFahrenheit() {
+		return this;
+	}
+
+    toKelvin() {
+        let resultado = ((this.valor_ - 32) / 1.8) + 273;
+        return new Kelvin(resultado, 'k');
+    }
+	
+	toString() {
+		let string = this.valor_.toFixed(1) + " Fahrenheit";
+		return string;
+	}
 }
 
 class Kelvin extends Temperatura {
@@ -60,12 +78,21 @@ class Kelvin extends Temperatura {
 
 	toCelsius() {
 		let resultado = this.valor_ - 273;
-		return resultado;
+		return new Celsius(resultado, 'c');
 	}
 
 	toFahrenheit() {
-		let resultado = (this.toCelsius * 1.8) + 32;
-		return resultado;
+		let resultado = ((this.valor_ - 273) * 1.8) + 32;
+		return new Fahrenheit(resultado, 'f');
+	}
+	
+	toKelvin() {
+		return this;
+	}
+	
+	toString() {
+		let string = this.valor_.toFixed(1) + " Kelvin";
+		return string;
 	}
 }
 
@@ -74,9 +101,18 @@ class Metros extends Longitud {
 		super(valor, tipo);
 	}
 
+	toMetros() {
+		return this;
+	}
+
 	toPulgadas() {
 		let resultado = this.valor_ * 39.37;
-		return resultado;
+		return new Pulgadas(resultado, 'i');
+	}
+	
+	toString() {
+		let string = this.valor_.toFixed(1) + " Meters";
+		return string;
 	}
 }
 
@@ -87,8 +123,17 @@ class Pulgadas extends Longitud {
 
     toMetros() {
         let resultado = this.valor_ / 39.37;
-        return resultado;
+        return new Metros(resultado, 'm');
     }
+	
+	toPulgadas() {
+		return this;
+	}
+	
+	toString() {
+		let string = this.valor_.toFixed(1) + " Inches";
+		return string;
+	}
 }
 
 function calculate() {
@@ -113,16 +158,16 @@ function calculate() {
                     case 'c':
 				    case 'C':
                         result = aux.toCelsius();
-                        result = result.toFixed(1) + " Celsius";
+                        result = result.toString();
                         break;
 				    case 'k':
 				    case 'K':
                         result = aux.toKelvin();
-                        result = result.toFixed(1) + " Kelvin";
+                        result = result.toString();
                         break;
 				    case 'f':
 				    case 'F':
-                        result = num.toFixed(1) + " Fahrenheit";
+                        result = aux.toString();
                         break
 				    default:
                         result = error;
@@ -135,16 +180,16 @@ function calculate() {
                     case 'f':
 				    case 'F':
                         result = aux.toFahrenheit();
-                        result = result.toFixed(1) + " Fahrenheit";
+                        result = result.toString();
                         break;
 				    case 'k':
 				    case 'K':
                         result = aux.toKelvin();
-                        result = result.toFixed(1) + " Kelvin";
+                        result = result.toString();
                         break;
 				    case 'c':
 				    case 'C':
-                        result = num.toFixed(1) + " Celsius";
+                        result = aux.toString();
                         break;
 				    default:
                         result = error;
@@ -157,16 +202,16 @@ function calculate() {
                     case 'c':
 				    case 'C':
                         result = aux.toCelsius();
-                        result = result.toFixed(1) + " Celsius";
+                        result = result.toString();
                         break;
 				    case 'f':
 				    case 'F':
                         result = aux.toFahrenheit();
-                        result = result.toFixed(1) + " Fahrenheit";
+                        result = result.toString();
                         break;
 				    case 'k':
 				    case 'K':
-                        result = num.toFixed(1) + " Kelvin";
+                        result = aux.toString();
                         break;
 				    default:
                         result = error;
@@ -179,11 +224,11 @@ function calculate() {
                     case 'i':
                     case 'I':
                         result = aux.toPulgadas();
-                        result = result.toFixed(1) + " Inches";
+                        result = result.toString();
                         break;
 				    case 'm':
 				    case 'M':
-                        result = num.toFixed(1) + " Meters";
+                        result = aux.toString();
                         break;
 				    default:
                         result = error;
@@ -196,11 +241,11 @@ function calculate() {
                     case 'm':
 				    case 'M':
                         result = aux.toMetros();
-                        result = result.toFixed(1) + " Inches";
+                        result = result.toString();
                         break;
 				    case 'i':
 				    case 'I':
-                        result = num.toFixed(1) + " Meters";
+                        result = aux.toString();
                         break;
 				    default:
                         result = error;
