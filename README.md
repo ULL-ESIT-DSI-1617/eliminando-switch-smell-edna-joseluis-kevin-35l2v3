@@ -34,7 +34,7 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 
 [Despliegue en Heroku](https://programacion-oo-herencia-js.herokuapp.com/) - Edna Liliana Galiano Camacho
 
-[Despliegue en Heroku](https://herencias.herokuapp.com/) - José Luis Doblado González
+[Despliegue en Heroku](https://eliminando-smell.herokuapp.com/) - José Luis Doblado González
 
 [Despliegue en Heroku](https://oop-javascript.herokuapp.com/) - Kevin Estévez Expósito
 
