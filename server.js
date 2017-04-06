@@ -1,9 +1,6 @@
 "use strict"
 let express = require('express'),
 	app = express();
-let path = require('path');
-
-let users = require("./users.json");
 
 app.set('port', (process.env.PORT || 8080));
 
