@@ -28,11 +28,9 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 * [Apuntes: Design patterns](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/).
 
 
-## Aplicación
+## Despliegues
 
-[Despliegue en gh-pages](https://ull-esit-dsi-1617.github.io/programacion-orientada-a-objetos-y-herencia-en-javascript-edna-joseluis-kevin-35l2v3/)
-
-## Libro
+[Despliegue en gh-pages](https://ull-esit-dsi-1617.github.io/eliminando-switch-smell-edna-joseluis-kevin-35l2v3/)
 
 [Despliegue en Heroku](https://programacion-oo-herencia-js.herokuapp.com/) - Edna Liliana Galiano Camacho
 
