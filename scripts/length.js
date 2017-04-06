@@ -1,5 +1,6 @@
 "use strict";
 
+
 class Longitud extends Medida {
     constructor(valor, tipo) {
         super(valor, "Longitud");
@@ -46,9 +47,3 @@ class Pulgadas extends Longitud {
 		return string;
 	}
 }
-
-// module.exports = {
-//   Longitud: Longitud,
-//   Metros: Metros,
-//   Pulgadas: Pulgadas
-// };

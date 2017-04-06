@@ -3,8 +3,7 @@
 (function(exports) {
 	"use strict";
 	function main() {
-		var valor     = document.getElementById('original').value;
-			// elemento  = document.getElementById('output');
+		var valor = document.getElementById('original').value;
 		converted.innerHTML = Medida.convertir(valor);
 		return false;
 	}

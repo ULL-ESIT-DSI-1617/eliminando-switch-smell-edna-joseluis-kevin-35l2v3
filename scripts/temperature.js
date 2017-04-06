@@ -1,6 +1,5 @@
-'use strict'
+"use strict";
 
-// var Medida = require('./medida.js')
 
 class Temperatura extends Medida {
     constructor(valor, tipo) {
@@ -88,11 +87,3 @@ class Kelvin extends Temperatura {
 		return string;
 	}
 }
-
-
-// module.exports = {
-//   Temperatura: Temperatura,
-//   Celsius: Celsius,
-//   Fahrenheit: Fahrenheit,
-//   Kelvin: Kelvin
-// };
