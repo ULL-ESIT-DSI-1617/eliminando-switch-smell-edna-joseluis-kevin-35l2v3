@@ -19,7 +19,7 @@ Medida.measures = {F: 'Fahrenheit',
 			I: 'Pulgadas',
 			i: 'Pulgadas'};
 
-const regexp = /^\s*([-+]?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*([fFcCkKmMiI])\s+(?:to\s+)?([fFcCkKmMiI])\s*$/;
+const regexp = /^\s*([-+]?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*([a-zA-Z])\s+(?:to\s+)?([a-zA-Z])\s*$/;
 
 Medida.convertir = function (valor) {
 	let measures = this.measures;
