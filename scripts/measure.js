@@ -3,8 +3,8 @@
 
 class Medida {
 	constructor(valor, medida) {
-		this.valor_ = valor;  //Valor numerico que introducimos
-		this.medida_ = medida;  //type1 de medida (Temperatura, Longitud, etc)
+		this.valor_ = valor;  // Valor numerico que introducimos
+		this.medida_ = medida;  // Tipo de medida (Temperatura, Longitud, etc)
 	}
 }
 
@@ -22,20 +22,20 @@ Medida.measures = {F: 'Fahrenheit',
 const regexp = /^\s*([-+]?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*([fFcCkKmMiI])\s+(?:to\s+)?([fFcCkKmMiI])\s*$/;
 
 Medida.convertir = function (valor) {
-	let measures = this.measures;//Hash de type1
+	let measures = this.measures;
 
 	let m = valor.match(regexp);
 
 	if (m) {
-		let num = parseFloat(m[1]),//Numero
-			type1 = m[2],//Origen
-			type2 = m[3];//Destino
+		let num = parseFloat(m[1]),// Número
+			type1 = m[2],// Origen
+			type2 = m[3];// Destino
 
 		try {
-			var clase = eval(measures[type1]);
+			var clase = eval(measures[type1]);  // Guarda la clase correspondiente a type1
 			var source = new clase(num, type1);  // new Fahrenheit(32)
-			let target = "to"+measures[type2]; // Guarda string "toCelsius"
-			let aux = source[target](); // Objeto Celsius(En este caso en concreto)
+			let target = "to"+measures[type2];  // Guarda string "toCelsius"
+			let aux = source[target]();  // Objeto Celsius(En este caso en concreto)
 			return aux.toString();
 		}
 		catch(err) {
