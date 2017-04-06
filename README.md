@@ -42,6 +42,8 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 
 [Despliegue en Iaas](http://10.6.128.96:8087/) - Kevin Estévez Expósito
 
+[Despliegue en Iaas](http://10.6.128.38:8081/) - José Luis Doblado González
+
 ## A tener en cuenta
 
 Los apuntes estarán protegidos con usuario *dsi1617* y clave *dsi1617password*
