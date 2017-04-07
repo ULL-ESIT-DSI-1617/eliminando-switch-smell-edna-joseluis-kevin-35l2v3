@@ -9,17 +9,17 @@ class Medida {
 }
 
 Medida.measures = {F: 'Fahrenheit',
-			f: 'Fahrenheit',
-			C: 'Celsius',
-			c: 'Celsius',
-			K: 'Kelvin',
-			k: 'Kelvin',
-			M: 'Metros',
-			m: 'Metros',
-			I: 'Pulgadas',
-			i: 'Pulgadas'};
+		   f: 'Fahrenheit',
+		   C: 'Celsius',
+		   c: 'Celsius',
+		   K: 'Kelvin',
+		   k: 'Kelvin',
+		   M: 'Metros',
+		   m: 'Metros',
+		   I: 'Pulgadas',
+		   i: 'Pulgadas'};
 
-const regexp = /^\s*([-+]?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*([a-zA-Z])\s+(?:to\s+)?([a-zA-Z])\s*$/;
+const regexp = /^\s*([-+]?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)\s*([a-zA-Z]+)\s+(?:to\s+)?([a-zA-Z]+)\s*$/;
 
 Medida.convertir = function (valor) {
 	let measures = this.measures;
