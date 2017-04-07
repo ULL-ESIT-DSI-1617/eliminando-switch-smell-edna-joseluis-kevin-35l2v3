@@ -32,15 +32,15 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 
 [Despliegue en gh-pages](https://ull-esit-dsi-1617.github.io/eliminando-switch-smell-edna-joseluis-kevin-35l2v3/)
 
-[Despliegue en Heroku](https://programacion-oo-herencia-js.herokuapp.com/) - Edna Liliana Galiano Camacho
+[Despliegue en Heroku]() - Edna Liliana Galiano Camacho
 
 [Despliegue en Heroku](https://eliminando-smell.herokuapp.com/) - José Luis Doblado González
 
-[Despliegue en Heroku](https://oop-javascript.herokuapp.com/) - Kevin Estévez Expósito
+[Despliegue en Heroku](https://eliminando-switch-smells.herokuapp.com/) - Kevin Estévez Expósito
 
 [Despliegue en Iaas]() - Edna Liliana Galiano Camacho
 
-[Despliegue en Iaas](http://10.6.128.96:8087/) - Kevin Estévez Expósito
+[Despliegue en Iaas]() - Kevin Estévez Expósito
 
 [Despliegue en Iaas](http://10.6.128.38:8081/) - José Luis Doblado González
 
