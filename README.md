@@ -44,10 +44,6 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 
 [Despliegue en Iaas](http://10.6.128.38:8081/) - José Luis Doblado González
 
-## A tener en cuenta
-
-Los apuntes estarán protegidos con usuario *dsi1617* y clave *dsi1617password*
-
 ## Asignatura DSI ULL
 
 [Desarrollo de Sistemas Informáticos](https://campusvirtual.ull.es/1617/course/view.php?id=1136)
