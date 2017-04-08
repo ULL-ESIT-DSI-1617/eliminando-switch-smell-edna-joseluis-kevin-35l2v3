@@ -32,7 +32,7 @@ La expresión regular necesaria para usar es un prefijo de la expresión regular
 
 [Despliegue en gh-pages](https://ull-esit-dsi-1617.github.io/eliminando-switch-smell-edna-joseluis-kevin-35l2v3/)
 
-[Despliegue en Heroku]() - Edna Liliana Galiano Camacho
+[Despliegue en Heroku](https://eliminando-switch-smell.herokuapp.com/) - Edna Liliana Galiano Camacho
 
 [Despliegue en Heroku](https://eliminando-smell.herokuapp.com/) - José Luis Doblado González
 
