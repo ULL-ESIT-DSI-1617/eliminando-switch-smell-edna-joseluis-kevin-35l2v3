@@ -1,0 +1,26 @@
+{
+  "name": "EliminandoSwitchSmells",
+  "version": "0.0.1",
+  "description": "Práctica 7: Eliminando Switch Smells",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-edna-joseluis-kevin-35l2v3"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "Edna Liliana Galiano Camacho-José Luis Doblado González-Kevin Estévez Expósito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-edna-joseluis-kevin-35l2v3/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-edna-joseluis-kevin-35l2v3#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
